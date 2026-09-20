@@ -1,0 +1,14 @@
+.staff-permissions { min-width: 0; }
+.staff-permission-select { display: grid; gap: .5rem; max-width: 28rem; margin-block-end: 1.25rem; }
+.staff-permission-select select { width: 100%; }
+.staff-permission-groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 1rem; }
+.staff-permissions fieldset { border: 1px solid #d8e3f5; border-radius: 12px; padding: 1rem; margin: 0; min-width: 0; }
+.staff-permissions legend { padding-inline: .4rem; color: #193561; font-weight: 700; }
+.staff-permissions .staff-permission-toggle { display: flex; flex-direction: row; align-items: center; justify-content: space-between; gap: 1rem; min-height: 46px; cursor: pointer; font-weight: 500; }
+.staff-permissions .staff-permission-toggle input { appearance: auto; width: 20px; height: 20px; min-height: 0; flex: 0 0 20px; accent-color: #2455e8; margin: 0; }
+.staff-permissions .staff-history-window { margin-block: 1.25rem; }
+.staff-history-fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr)); gap: 1rem; }
+.staff-history-fields label { display: grid; gap: .5rem; }
+.staff-history-fields input { width: 100%; min-width: 0; }
+.staff-permission-actions { display: flex; flex-wrap: wrap; gap: .75rem; justify-content: flex-end; margin-block-start: 1rem; }
+.staff-permission-loading .skeleton { height: 80px; border-radius: 10px; background: #e8effb; margin-block: .75rem; }
