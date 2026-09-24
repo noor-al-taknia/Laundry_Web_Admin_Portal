@@ -25,3 +25,9 @@ The office repository’s `office-portal/src/BusinessDayPanel.tsx` (copied to `s
 ## Verification
 
 `tests/business-day.test.ts` covers integer money, change, card exclusion, staff-versus-drawer cash, correction deltas, expense reversal, and count differences. Database integration checks additionally exercise unique open-day constraints, transaction rollback after close, immutable history, and optimistic closing conflicts.
+
+## Admin closing report
+
+The **Daily opening & closing** page provides the historical, tabular view of closed sessions. Administrators can select a calendar month or a custom start/end date, then page through the matching records. Each row shows opening cash, expected drawer cash, counted cash, difference, the users who opened and closed the day, and closing notes.
+
+Use the CSV, Excel, or PDF buttons to download the currently selected date range. Exports include every matching closed day (up to 1,000 rows); narrow the range if the report is larger. The report is read-only: opening and closing actions remain in the **Shop day controls** section beneath the table.
